@@ -23,7 +23,19 @@ MAX_CHARS = 199
 
 
 def validate(line: str) -> str:
-    """Strip and sanity-check the entry; raise ValueError on bad input."""
+    """Strip and sanity-check the entry; raise ValueError on bad input.
+
+    Order matters: the whitespace-only check comes first, because an
+    empty or whitespace-only line would otherwise trip the length
+    check with a misleading message. A line with leading or trailing
+    whitespace is rejected outright instead of being silently
+    rewritten, so what is written to /output/entry.txt is exactly
+    what was reviewed.
+    """
+    if not line.strip():
+        raise ValueError("entry must not be empty or only whitespace")
+    if line != line.strip():
+        raise ValueError("entry must not have leading or trailing whitespace")
     text = line.strip()
     if not MIN_CHARS <= len(text) <= MAX_CHARS:
         raise ValueError(
@@ -31,8 +43,6 @@ def validate(line: str) -> str:
         )
     if "\n" in text or "\r" in text:
         raise ValueError("entry must be a single line")
-    if not text:
-        raise ValueError("entry must not be only whitespace")
     return text
 
 

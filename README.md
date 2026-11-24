@@ -1,5 +1,7 @@
 # autocorrect-fail-20261125b
 [![make.fun · u-zeroxfive-funniest-autocorrect-fail-ddf82154](https://make.fun/badge/u-zeroxfive-funniest-autocorrect-fail-ddf82154.svg)](https://make.fun/bounty/u-zeroxfive-funniest-autocorrect-fail-ddf82154?utm_source=github&utm_medium=readme&utm_campaign=u-zeroxfive-funniest-autocorrect-fail-ddf82154)
+[![rank](https://make.fun/badge/u-zeroxfive-funniest-autocorrect-fail-ddf82154/faj17/autocorrect-fail-20261125b/rank.svg)](https://make.fun/bounty/u-zeroxfive-funniest-autocorrect-fail-ddf82154/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-zeroxfive-funniest-autocorrect-fail-ddf82154)
+[![reward](https://make.fun/badge/u-zeroxfive-funniest-autocorrect-fail-ddf82154/faj17/autocorrect-fail-20261125b/reward.svg)](https://make.fun/bounty/u-zeroxfive-funniest-autocorrect-fail-ddf82154?utm_source=github&utm_medium=readme&utm_campaign=u-zeroxfive-funniest-autocorrect-fail-ddf82154)
 
 A one-line autocorrect fail for the make.fun bounty "Funniest Autocorrect Fail": a parishioner texts the pastor about the church potluck, and autocorrect turns the salad into Satan. Running main.py writes the line to /output/entry.txt.
 
